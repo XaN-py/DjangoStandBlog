@@ -1,3 +1,4 @@
+{% load social_share %}
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
@@ -199,8 +200,8 @@
                                             <div class="col-6">
                                                 <ul class="post-share">
                                                     <li><i class="fa fa-share-alt"></i></li>
-                                                    <li><a href="#">Facebook</a>,</li>
-                                                    <li><a href="#"> Twitter</a></li>
+                                                    <li>{% post_to_whatsapp articles.get_apsolity_yrl "whatsapp" %}</li>
+                                                    <li>{% post_to_telegram "a" articles.get_apsolity_yrl ",Telegram" %}</li>
                                                 </ul>
                                             </div>
                                         </div>
